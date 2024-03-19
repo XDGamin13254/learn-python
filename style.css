@@ -25,12 +25,11 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    background: none; /* Remove background color */
-    border: 2px solid #fff; /* White border */
+    background-color: #800080; /* Purple banner */
 }
 
 .dropbtn:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* White with opacity */
+    background-color: #6a006a; /* Darker purple on hover */
 }
 
 .dropdown {
@@ -45,6 +44,7 @@ body {
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+    width: 100%;
 }
 
 .dropdown-content button {
