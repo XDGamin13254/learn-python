@@ -4,16 +4,23 @@ body {
     padding: 0;
 }
 
+.banner {
+    background-color: #800080; /* Purple banner */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 .button-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    margin-top: 20px;
 }
 
 .button {
     padding: 10px 20px;
-    background-color: #800080; /* Purple banner */
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
@@ -22,5 +29,5 @@ body {
 }
 
 .button:hover {
-    background-color: #6a006a; /* Darker purple on hover */
+    background-color: #45a049;
 }
