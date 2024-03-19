@@ -13,7 +13,7 @@ body {
 
 .button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #800080; /* Purple banner */
     color: white;
     border: none;
     border-radius: 5px;
@@ -22,5 +22,5 @@ body {
 }
 
 .button:hover {
-    background-color: #45a049;
+    background-color: #6a006a; /* Darker purple on hover */
 }
