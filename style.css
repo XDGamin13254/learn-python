@@ -38,13 +38,13 @@ body {
 }
 
 .dropdown-content {
-    display: none;
     position: absolute;
     background-color: #6a006a; /* Purple shade */
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
     width: 100%;
+    display: none;
 }
 
 .dropdown-content button {
@@ -62,4 +62,8 @@ body {
 
 .dropdown-content button:hover {
     background-color: #480048; /* Darker purple on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
