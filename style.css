@@ -2,19 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: top; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-    flex-direction: column; /* Stack vertically */
 }
 
 .banner {
-    background-color: #1c0138; /* Purple banner */
+    background-color: #1c0138; /* Purple banner /
     color: white;
     padding: 20px;
     text-align: center;
-    width: 100%;
 }
 
 .button-container {
@@ -22,13 +16,64 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    color: white; / Text color /
+    border: 2px solid white; / White border /
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #1c0138; / Purple banner /
+    text-decoration: none; / No underline /
+}
+
+.button:hover {
+    background-color: #6a006a; / Darker purple on hover /
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #6a006a; / Purple shade /
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
     width: 100%;
+    display: none;
+}
+
+.dropdown-content button {
+    color: white; / Text color /
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    border: 2px solid #480048; / Darker purple border /
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #480048; / Darker purple on hover /
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .hello-world {
-    text-align: center; /* Horizontally centers text */
-    flex: 1; /* Takes remaining space, useful if there are other elements */
+    text-align: center; / Horizontally centers text /
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
+    height: 100vh; / Full viewport height /
+    margin-top: -20px; / Adjust as needed to fit after the banner */
 }
