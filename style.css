@@ -26,6 +26,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: #1c0138; /* Purple banner */
+    text-decoration: none; /* No underline */
 }
 
 .button:hover {
