@@ -96,5 +96,6 @@ body {
     display: flex;
     padding: 20px; /* Adjust the value as needed */
     justify-content: center;
+    font-size: 18px; /* Adjust the font size value as needed */
     align-items: top;
 }
