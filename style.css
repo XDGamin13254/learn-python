@@ -2,6 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally /
+    align-items: top; / Center vertically /
+    height: 100vh; / Full viewport height /
+    flex-direction: column; / Stack vertically /
 }
 
 .banner {
@@ -76,4 +81,27 @@ body {
     align-items: center;
     height: 100vh; / Full viewport height /
     margin-top: -20px; / Adjust as needed to fit after the banner */
+}
+.banner {
+    background-color: #1c0138; / Purple banner /
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.hello-world {
+    text-align: center; / Horizontally centers text /
+    flex: 1; / Takes remaining space, useful if there are other elements */
+    display: flex;
+    justify-content: center;
+    align-items: top;
 }
