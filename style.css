@@ -68,3 +68,12 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.hello-world {
+    text-align: center; /* Horizontally centers text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin-top: -20px; /* Adjust as needed to fit after the banner */
+}
