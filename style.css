@@ -30,5 +30,5 @@ body {
     flex: 1; /* Takes remaining space, useful if there are other elements */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
