@@ -81,8 +81,9 @@ body {
     text-align: center; /* Horizontally centers text */
     flex: 3; /* Takes remaining space, useful if there are other elements */
     display: flex;
-    padding: 150px; /* Adjust the value as needed */
+    padding: 50px; /* Adjusted padding */
     justify-content: center;
-    font-size: 18px; /* Adjust the font size value as needed */
+    font-size: 24px; /* Adjusted font size */
     align-items: top;
+    color: #e9e4de; /* Text color */
 }
