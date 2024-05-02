@@ -78,7 +78,7 @@ body {
 }
 
 .hello-world {
-    text-align: right; /* Text align to the right */
+    text-align: left; /* Text align to the set value */
     flex: 3; /* Takes remaining space, useful if there are other elements */
     display: flex;
     padding: 50px;
