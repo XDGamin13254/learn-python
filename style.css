@@ -94,7 +94,7 @@ body {
     text-align: center; /* Horizontally centers text */
     flex: 1; /* Takes remaining space, useful if there are other elements */
     display: flex;
-    padding: 80px; /* Adjust the value as needed */
+    padding: 150px; /* Adjust the value as needed */
     justify-content: center;
     font-size: 18px; /* Adjust the font size value as needed */
     align-items: top;
