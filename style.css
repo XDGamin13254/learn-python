@@ -92,7 +92,7 @@ body {
 
 .hello-world {
     text-align: center; /* Horizontally centers text */
-    flex: 1; /* Takes remaining space, useful if there are other elements */
+    flex: 3; /* Takes remaining space, useful if there are other elements */
     display: flex;
     padding: 150px; /* Adjust the value as needed */
     justify-content: center;
