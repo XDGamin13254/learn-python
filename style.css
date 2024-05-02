@@ -7,13 +7,15 @@ body {
     align-items: top; /* Center vertically */
     height: 100vh; /* Full viewport height */
     flex-direction: column; /* Stack vertically */
+    background-color: #513f58; /* Updated background color */
 }
 
 .banner {
-    background-color: #1c0138; /* Purple banner */
+    background-color: #cfb7a1; /* Updated banner color */
     color: white;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .button-container {
@@ -21,6 +23,7 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
+    width: 100%;
 }
 
 .button {
@@ -72,22 +75,6 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.banner {
-    background-color: #1c0138; /* Purple banner */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-.button-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-    width: 100%;
 }
 
 .hello-world {
