@@ -88,3 +88,13 @@ body {
     align-items: top;
     color: #e9e4de; /* Text color */
 }
+.button2 {
+    padding: 10px 20px;
+    color: white; /* Text color */
+    border: 2px solid white; /* White border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #1c0138; /* Purple banner */
+    text-decoration: none; /* No underline */
+}
