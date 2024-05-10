@@ -4,7 +4,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: top; /* Align items to the top */
+    align-items: center; /* Align items to the center */
     min-height: 100vh; /* Minimum full viewport height */
     background-color: #513f58; /* Updated background color */
 }
@@ -12,7 +12,9 @@ body {
 .banner {
     background-color: #cfb7a1; /* Updated banner color */
     color: white;
+    padding: 20px;
     text-align: center;
+    align-items: top;
     width: 100%;
     border-radius: 10px; /* Curved corners */
 }
