@@ -4,9 +4,8 @@ body {
     padding: 0;
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: top; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-    flex-direction: column; /* Stack vertically */
+    align-items: top; /* Align items to the top */
+    min-height: 100vh; /* Minimum full viewport height */
     background-color: #513f58; /* Updated background color */
 }
 
@@ -17,6 +16,11 @@ body {
     text-align: center;
     width: 100%;
     border-radius: 10px; /* Curved corners */
+}
+
+.menu-button img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .button-container {
@@ -58,14 +62,13 @@ body {
 
 .dropdown-content button {
     color: white; /* Text color */
-    padding: 12px 16px;
+    padding: 10px 20px; /* Adjusted padding */
     text-decoration: none;
     display: block;
     background-color: transparent;
     border: 2px solid #480048; /* Darker purple border */
     border-radius: 5px;
-    width: auto; /* Adjust width dynamically */
-    text-align: left;
+    text-align: center; /* Center text */
     cursor: pointer;
 }
 
