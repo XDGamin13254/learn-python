@@ -12,7 +12,7 @@
             <div class="dropdown">
                 <button class="button" id="lessonsBtn">Lessons</button>
                 <div class="dropdown-content" id="lessonDropdown">
-                    <button class="button2" onclick="window.location.href='getting_started.html';">Getting Started</button>
+                    <button class="button2">Getting Started</button>
                     <button class="button2">Operators</button>
                     <button class="button2">Standard_Libraries</button>
                     <button class="button2">Functions</button>
