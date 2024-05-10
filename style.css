@@ -1,43 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Minarets Scriptwise </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="banner">
-        <div class="button-container">
-            <div class="dropdown">
-                <button class="button" id="lessonsBtn">Lessons</button>
-                <div class="dropdown-content" id="lessonDropdown">
-                    <button class="button2">Getting Started</button>
-                    <button class="button2">Operators</button>
-                    <button class="button2">Standard_Libraries</button>
-                    <button class="button2">Functions</button>
-                    <button class="button2">User_Input</button>
-                    <button class="button2">Additions</button>
-                    <button class="button2">Files</button>
-                    <button class="button2">Classes</button>
-                    <button class="button2">Control_flow</button>
-                    <button class="button2">Data_Types</button>
-                    <button class="button2">Modules</button>
-                    <button class="button2">Exceptions</button>
-                </div>
-            </div>
-            <button class="button">Contacts</button>
-        </div>
-    </div>
-    <div class="hello-world">
-        Hello,<br>
-        Welcome to Minarets Scriptwise, this website was born because we the 2024 high school seniors Caden Halencak and Connor Elm thought that the current way programming was being taught at Minarets was at times overly complex and could use some clarification.. As amateur enthusiasts in the land of coding we started this journey to share our basic knowledge and make coding education a little less intimidating for our peers.<br><br>
-        Here's what you'll find on our platform: <br><br>
-        A Learning Aid: Our collection of resources aims to guide you through the basics of coding making the process of finding and solving complex issues slightly easier in the future. While we may have made a boring and bland first website we promise a genuine attempt to simplify complex concepts and support your interest in coding.<br><br>
-        A Project Experience: For this SLE we aimed rather high and while our goals havent been completely met we exceeded our expectations in our ability.<br><br>
-        We thank you for looking into the world of coding and taking interest in the tech landscape! While we may not have the best website we hand typed it and our hands hurt.<br><br>
-        Happy coding,<br>
-        Caden Halencak, Connor Elm
-    </div>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: top; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack vertically */
+    background-color: #513f58; /* Updated background color */
+}
+
+.banner {
+    background-color: #cfb7a1; /* Updated banner color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px; /* Curved corners */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button, .button2 {
+    padding: 10px 20px;
+    color: white; /* Text color */
+    border: 2px solid white; /* White border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #1c0138; /* Purple banner */
+    text-decoration: none; /* No underline */
+}
+
+.button:hover, .button2:hover {
+    background-color: #6a006a; /* Darker purple on hover */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #6a006a; /* Purple shade */
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    display: none;
+}
+
+.dropdown-content button {
+    color: white; /* Text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    border: 2px solid #480048; /* Darker purple border */
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #480048; /* Darker purple on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hello-world {
+    text-align: left; /* Text align to the right */
+    flex: 3; /* Takes remaining space, useful if there are other elements */
+    display: flex;
+    padding: 50px;
+    justify-content: flex-end; /* Push text to the right side */
+    font-size: 24px;
+    align-items: top;
+    color: #e9e4de; /* Text color */
+}
