@@ -4,24 +4,16 @@ body {
     padding: 0;
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Align items to the center */
-    min-height: 100vh; /* Minimum full viewport height */
-    background-color: #513f58; /* Updated background color */
+    align-items: top; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack vertically */
 }
 
 .banner {
-    background-color: #cfb7a1; /* Updated banner color */
+    background-color: #1c0138; /* Purple banner */
     color: white;
     padding: 20px;
     text-align: center;
-    align-items: top;
-    width: 100%;
-    border-radius: 10px; /* Curved corners */
-}
-
-.menu-button img {
-    width: 30px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
 }
 
 .button-container {
@@ -29,7 +21,6 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    width: 100%;
 }
 
 .button {
@@ -58,18 +49,20 @@ body {
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+    width: 100%;
     display: none;
 }
 
 .dropdown-content button {
     color: white; /* Text color */
-    padding: 10px 20px; /* Adjusted padding */
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
     background-color: transparent;
     border: 2px solid #480048; /* Darker purple border */
     border-radius: 5px;
-    text-align: center; /* Center text */
+    width: 100%;
+    text-align: left;
     cursor: pointer;
 }
 
@@ -81,25 +74,28 @@ body {
     display: block;
 }
 
-.hello-world {
-    text-align: left; /* Text align to the left */
+.banner {
+    background-color: #1c0138; /* Purple banner */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.button-container {
     display: flex;
-    padding: 50px;
-    justify-content: space-between; /* Evenly distribute items */
-    font-size: 24px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.hello-world {
+    text-align: center; /* Horizontally centers text */
+    flex: 3; /* Takes remaining space, useful if there are other elements */
+    display: flex;
+    padding: 150px; /* Adjust the value as needed */
+    justify-content: center;
+    font-size: 18px; /* Adjust the font size value as needed */
     align-items: top;
-    color: #e9e4de; /* Text color */
-}
-
-/* Style for image buttons */
-.image-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.image-button img {
-    width: 100px; /* Adjust image width as needed */
-    height: auto; /* Maintain aspect ratio */
 }
