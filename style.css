@@ -53,7 +53,6 @@ body {
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
-    width: 100%;
     display: none;
 }
 
@@ -65,7 +64,7 @@ body {
     background-color: transparent;
     border: 2px solid #480048; /* Darker purple border */
     border-radius: 5px;
-    width: 100%;
+    width: auto; /* Adjust width dynamically */
     text-align: left;
     cursor: pointer;
 }
@@ -79,12 +78,24 @@ body {
 }
 
 .hello-world {
-    text-align: left; /* Text align to the right */
-    flex: 3; /* Takes remaining space, useful if there are other elements */
+    text-align: left; /* Text align to the left */
     display: flex;
     padding: 50px;
-    justify-content: flex-end; /* Push text to the right side */
+    justify-content: space-between; /* Evenly distribute items */
     font-size: 24px;
     align-items: top;
     color: #e9e4de; /* Text color */
+}
+
+/* Style for image buttons */
+.image-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.image-button img {
+    width: 100px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
