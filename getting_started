@@ -8,12 +8,11 @@
 </head>
 <body>
     <div class="banner">
-        <h1>Minarets Scriptwise</h1>
         <div class="button-container">
             <div class="dropdown">
                 <button class="button" id="lessonsBtn">Lessons</button>
                 <div class="dropdown-content" id="lessonDropdown">
-                    <button class="button">Getting_Started</button>
+                    <a href="getting_started.html" class="button">Getting_Started</a>
                     <button class="button">Operators</button>
                     <button class="button">Standard_Libraries</button>
                     <button class="button">Functions</button>
@@ -31,7 +30,6 @@
         </div>
     </div>
     <div class="hello-world">
-        Hello World
     </div>
 </body>
 </html>
