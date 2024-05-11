@@ -1,3 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: top; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack vertically */
+    background-color: #513f58; /* Updated background color */
+}
+
+.banner {
+    background-color: #cfb7a1; /* Updated banner color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px; /* Curved corners */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button, .button2 {
+    padding: 10px 20px;
+    color: white; /* Text color */
+    border: 2px solid white; /* White border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #1c0138; /* Purple banner */
+    text-decoration: none; /* No underline */
+}
+
+.button:hover, .button2:hover {
+    background-color: #6a006a; /* Darker purple on hover */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropdown-content {
     position: absolute;
     background-color: #6a006a; /* Purple shade */
@@ -7,16 +56,4 @@
     display: none;
 }
 
-.dropdown-content button {
-    color: white; /* Text color */
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    background-color: transparent;
-    border: 2px solid #480048; /* Darker purple border */
-    border-radius: 5px;
-    margin: 5px 0; /* Add margin to create space between buttons */
-    text-align: left;
-    cursor: pointer;
-    width: 100%;
-}
+.dropdown-content button
