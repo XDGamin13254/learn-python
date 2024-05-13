@@ -63,7 +63,7 @@ body {
     background-color: transparent;
     border: 2px solid #480048; /* Darker purple border */
     border-radius: 5px;
-    margin: 5px 0; /* Add margin to create space between buttons */
+    margin: 30px 0; /* Add margin to create space between buttons */
     text-align: left;
     cursor: pointer;
     width: 100%;
