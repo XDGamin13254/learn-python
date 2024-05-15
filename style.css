@@ -1,44 +1,66 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: top; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-    flex-direction: column; /* Stack vertically */
-    background-color: #513f58; /* Updated background color */
+/* style.css */
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.banner {
-    background-color: #cfb7a1; /* Updated banner color */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    border-radius: 10px; /* Curved corners */
-}
-
-.hello-world {
-    text-align: left; /* Text align to the right */
-    flex: 3; /* Takes remaining space, useful if there are other elements */
-    display: flex;
-    padding: 50px;
-    justify-content: flex-end; /* Push text to the right side */
-    font-size: 24px;
-    align-items: top;
-    color: #e9e4de; /* Text color */
-}
-
+/* Dropdown button */
 .button {
-    padding: 10px 20px;
-    color: white; /* Text color */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: #1c0138; /* Purple banner */
-    text-decoration: none; /* No underline */
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-.button:hover {
-    background-color: #6a006a; /* Darker purple on hover */
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Dropdown button hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown button 2 */
+.button2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Dropdown button 2 hover */
+.button2:hover {
+  background-color: #3e8e41;
+}
+
+/* Banner styling */
+.banner {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Hello world styling */
+.hello-world {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #333;
 }
