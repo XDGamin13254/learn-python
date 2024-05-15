@@ -25,7 +25,7 @@
   z-index: 1;
 }
 
-/* Dropdown button hover */
+/* Show dropdown content when hovering over the dropdown container */
 .dropdown:hover .dropdown-content {
   display: block;
 }
