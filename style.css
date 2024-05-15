@@ -29,3 +29,16 @@ body {
     align-items: top;
     color: #e9e4de; /* Text color */
 }
+
+.button {
+    padding: 10px 20px;
+    color: white; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #1c0138; /* Purple banner */
+    text-decoration: none; /* No underline */
+}
+
+.button:hover {
+    background-color: #6a006a; /* Darker purple on hover */
+}
