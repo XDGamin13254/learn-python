@@ -30,6 +30,12 @@
   display: block;
 }
 
+/* Style for dropdown buttons */
+.dropdown-content .button {
+  display: block;
+  padding: 10px 16px; /* Add padding for spacing */
+}
+
 /* Banner styling */
 .banner {
   background-color: #333;
