@@ -19,57 +19,6 @@ body {
     border-radius: 10px; /* Curved corners */
 }
 
-.button-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.button, .button2 {
-    padding: 10px 20px;
-    color: white; /* Text color */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: #1c0138; /* Purple banner */
-    text-decoration: none; /* No underline */
-}
-
-.button:hover, .button2:hover {
-    background-color: #6a006a; /* Darker purple on hover */
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    position: absolute;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-    width: 160px; /* Set width to desired value */
-    display: none;
-}
-
-.dropdown-content button {
-    color: white; /* Text color */
-    padding: 12px 16px;
-    text-decoration: none;
-    cursor: pointer;
-    width: 100%;
-    margin: 5px 0; /* Add margin to create space between buttons */
-}
-
-.dropdown-content button:hover {
-    background-color: #480048; /* Darker purple on hover */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .hello-world {
     text-align: left; /* Text align to the right */
     flex: 3; /* Takes remaining space, useful if there are other elements */
