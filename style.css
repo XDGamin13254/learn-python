@@ -47,7 +47,6 @@ body {
 
 .dropdown-content {
     position: absolute;
-    background-color: #6a006a; /* Purple shade */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
     width: 160px; /* Set width to desired value */
@@ -58,7 +57,6 @@ body {
     color: white; /* Text color */
     padding: 12px 16px;
     text-decoration: none;
-    background-color: transparent;
     cursor: pointer;
     width: 100%;
     margin: 5px 0; /* Add margin to create space between buttons */
