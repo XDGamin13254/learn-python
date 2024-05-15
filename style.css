@@ -1,5 +1,4 @@
-/* Existing styles */
-.body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -42,33 +41,4 @@
 
 .button:hover {
     background-color: #6a006a; /* Darker purple on hover */
-}
-
-/* New styles for dropdown menu */
-.button2 {
-    position: relative; /* Make it a reference point for the dropdown */
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1c0138; /* Dropdown background color */
-    min-width: 120px; /* Set the width */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Add a shadow */
-    z-index: 1; /* Make sure it appears above other content */
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #6a006a; /* Darker purple on hover */
-}
-
-.button2:hover .dropdown-content {
-    display: block; /* Show the dropdown on hover */
 }
