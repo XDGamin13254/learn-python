@@ -9,7 +9,7 @@
 
 /* Dropdown button */
 .button {
-  background-color: #e0d097; /* Change button color */
+  background-color: #513f58; /* Change button color */
   color: #e9e4d3; /* Change text color */
   padding: 16px;
   font-size: 16px;
@@ -55,6 +55,7 @@
   padding: 20px;
   border: 1px solid #333;
   color: #e9e4d3; /* Change text color */
+  font-size: 20px; /* Increase font size */
 }
 
 /* Spread out the Contacts button and the Lessons button */
