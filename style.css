@@ -10,7 +10,7 @@
 /* Dropdown button */
 .button {
   background-color: #513f58; /* Change button color */
-  color: white;
+  color: #e9e4d3; /* Change text color */
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -38,7 +38,7 @@
 /* Banner styling */
 .banner {
   background-color: #cfb7a1; /* Change banner color */
-  color: white;
+  color: #e9e4d3; /* Change text color */
   padding: 10px;
   text-align: center;
 }
@@ -54,6 +54,7 @@
   margin: 20px;
   padding: 20px;
   border: 1px solid #333;
+  color: #e9e4d3; /* Change text color */
 }
 
 /* Spread out the Contacts button and the Lessons button */
@@ -64,4 +65,5 @@
 /* Body color */
 body {
   background-color: #513f58; /* Change body color */
+  color: #e9e4d3; /* Change text color */
 }
