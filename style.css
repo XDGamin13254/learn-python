@@ -4,6 +4,7 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  margin-right: 20px; /* Add margin to the dropdown container */
 }
 
 /* Dropdown button */
@@ -51,4 +52,9 @@
   margin: 20px;
   padding: 20px;
   border: 1px solid #333;
+}
+
+/* Spread out the Contacts button and the Lessons button */
+.button-container .button:first-child {
+  margin-right: 20px; /* Add margin to the Lessons button */
 }
