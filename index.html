@@ -9,7 +9,7 @@
 <body>
     <div class="banner">
         <!-- Hamburger button -->
-        <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger" onclick="goToHomePage()">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -48,13 +48,8 @@
     </div>
 
     <script>
-        function toggleMenu() {
-            var menu = document.getElementById("lessonDropdown");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
+        function goToHomePage() {
+            window.location.href = 'index.html';
         }
     </script>
 </body>
