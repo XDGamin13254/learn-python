@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getting Started - Minarets Scriptwise</title>
+    <title>Minarets Scriptwise</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
         <div class="button-container">
             <div class="dropdown">
                 <button class="button" id="lessonsBtn">Lessons</button>
                 <div class="dropdown-content" id="lessonDropdown">
-                    <a href="getting_started.html" class="button2">Getting_Started</a>
-                    <button class="button2">Operators</button>
-                    <button class="button2">Standard_Libraries</button>
-                    <button class="button2">Functions</button>
-                    <button class="button2">User_Input</button>
-                    <button class="button2">Additions</button>
-                    <button class="button2">Files</button>
-                    <button class="button2">Classes</button>
-                    <button class="button2">Control_flow</button>
-                    <button class="button2">Data_Types</button>
-                    <button class="button2">Modules</button>
-                    <button class="button2">Exceptions</button>
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
                 </div>
             </div>
-            <button class="button">Contacts</button>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
         </div>
     </div>
     <div class="hello-world">
@@ -34,5 +41,11 @@
         <button class="image-button"><img src="button2_image.jpg" alt="Button 2"></button>
         <button class="image-button"><img src="button3_image.jpg" alt="Button 3"></button>
     </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
 </body>
 </html>
