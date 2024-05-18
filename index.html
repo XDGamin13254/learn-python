@@ -8,25 +8,32 @@
 </head>
 <body>
     <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
         <div class="button-container">
             <div class="dropdown">
                 <button class="button" id="lessonsBtn">Lessons</button>
                 <div class="dropdown-content" id="lessonDropdown">
-                    <a href="getting_started.html" class="button">Getting Started</a>
-                    <a href="operators.html" class="button">Operators</a>
-                    <a href="standard_libraries.html" class="button">Standard Libraries</a>
-                    <a href="functions.html" class="button">Functions</a>
-                    <a href="user_input.html" class="button">User Input</a>
-                    <a href="additions.html" class="button">Additions</a>
-                    <a href="files.html" class="button">Files</a>
-                    <a href="classes.html" class="button">Classes</a>
-                    <a href="control_flow.html" class="button">Control Flow</a>
-                    <a href="data_types.html" class="button">Data Types</a>
-                    <a href="modules.html" class="button">Modules</a>
-                    <a href="exceptions.html" class="button">Exceptions</a>
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
                 </div>
             </div>
-            <a href="contacts.html" class="button">Contacts</a>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
         </div>
     </div>
     <div class="hello-world">
@@ -39,5 +46,16 @@
         Happy coding,<br>
         Caden Halencak, Connor Elm
     </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("lessonDropdown");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
