@@ -8,7 +8,7 @@
 }
 
 /* Dropdown button */
-.button {
+.dropdown .button {
   background-color: #513f58; /* Change button color */
   color: #e9e4d3; /* Change text color */
   padding: 16px;
