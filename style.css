@@ -23,6 +23,22 @@
   box-sizing: border-box; /* Include padding and border in the button's total width */
 }
 
+/* Contacts button */
+.contacts-button {
+  background-color: #513f58; /* Match button color */
+  color: #e9e4d3; /* Match text color */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  display: block; /* Ensure each button occupies its own line */
+  margin: 0; /* Remove default margin */
+  height: 50px; /* Set fixed height */
+  width: auto; /* Allow button width to adjust based on content */
+  box-sizing: border-box; /* Include padding and border in the button's total width */
+}
+
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
