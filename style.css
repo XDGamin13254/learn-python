@@ -21,6 +21,12 @@
   height: 50px; /* Set fixed height */
   width: 100%; /* Ensure buttons fill the available width */
   box-sizing: border-box; /* Include padding and border in the button's total width */
+  transition: background-color 0.3s; /* Add transition effect to background color */
+}
+
+/* Change background color slightly brighter on hover */
+.dropdown .button:hover {
+  background-color: #633e66; /* Slightly brighter purple */
 }
 
 /* Contacts button */
