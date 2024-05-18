@@ -18,6 +18,9 @@
   text-decoration: none; /* Remove underline */
   display: block; /* Ensure each button occupies its own line */
   margin: 0; /* Remove default margin */
+  height: 50px; /* Set fixed height */
+  width: 100%; /* Ensure buttons fill the available width */
+  box-sizing: border-box; /* Include padding and border in the button's total width */
 }
 
 /* Dropdown content (hidden by default) */
