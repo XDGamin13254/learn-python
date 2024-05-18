@@ -19,12 +19,6 @@
   display: block; /* Ensure each button occupies its own line */
 }
 
-/* Fully color the "Getting Started" button */
-.button2 {
-  background-color: #513f58; /* Change button color */
-  color: #e9e4d3; /* Change text color */
-}
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
@@ -47,6 +41,7 @@
   color: #e9e4d3; /* Change text color */
   padding: 10px;
   text-align: center;
+  position: relative; /* Make the banner a relative position */
 }
 
 /* Hamburger button styling */
@@ -81,7 +76,7 @@
   padding: 20px;
   border: 1px solid #333;
   color: #e9e4d3; /* Change text color */
-  font-size: 140px; /* Increase font size */
+  font-size: 100px; /* Increase font size */
 }
 
 /* Spread out the Contacts button and the Lessons button */
