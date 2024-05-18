@@ -46,7 +46,7 @@
   box-sizing: border-box; /* Ensure padding is included in width */
   background-color: #513f58; /* Ensure dropdown buttons have a background */
   color: #e9e4d3;
-  border: 10px solid black; /* Increase border to 10px */
+  border: 2px solid black; /* Increase border to 10px */
 }
 
 .dropdown-content .button:hover {
