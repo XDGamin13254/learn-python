@@ -14,10 +14,10 @@
   border: none;
   cursor: pointer;
   text-decoration: none;
-  display: inline-block; /* Changed to inline-block to prevent full width */
+  display: inline-block; /* Prevent full width */
   margin: 0;
   height: 50px;
-  width: 150px; /* Set a fixed width for consistency */
+  width: 150px; /* Fixed width for main buttons */
   box-sizing: border-box;
 }
 
@@ -37,6 +37,11 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdown-content .button {
+  width: 100%; /* Full width for dropdown buttons */
+  height: auto; /* Auto height for dropdown buttons */
 }
 
 .banner {
