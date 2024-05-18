@@ -14,10 +14,10 @@
   border: none;
   cursor: pointer;
   text-decoration: none;
-  display: block;
+  display: inline-block; /* Changed to inline-block to prevent full width */
   margin: 0;
   height: 50px;
-  width: 100%;
+  width: 150px; /* Set a fixed width for consistency */
   box-sizing: border-box;
 }
 
