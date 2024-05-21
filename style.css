@@ -2,8 +2,8 @@
 
 /* General Styling */
 body {
-  background-color: #513f58;
-  color: #e9e4d3;
+  background-color: #2d2d2d; /* Dark background for contrast */
+  color: #f5f5f5; /* Light text color for readability */
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
@@ -11,13 +11,13 @@ body {
 
 /* Banner Styling */
 .banner {
-  background-color: #cfb7a1;
-  color: #e9e4d3;
+  background-color: #1e1e1e; /* Darker banner for distinct separation */
+  color: #f5f5f5; /* Light text color */
   padding: 15px 20px;
   text-align: center;
   position: relative;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
 
@@ -39,8 +39,8 @@ body {
 .hamburger .line {
   width: 100%;
   height: 2px;
-  background-color: #e0d097;
-  border: 1px solid black;
+  background-color: #f5f5f5; /* Light color for visibility */
+  border: 1px solid #444; /* Dark border */
 }
 
 /* Button Container */
@@ -53,11 +53,11 @@ body {
 
 /* Button Styling */
 .button {
-  background-color: #513f58;
-  color: #e9e4d3;
+  background-color: #3a3a3a; /* Darker button background */
+  color: #f5f5f5; /* Light text color */
   padding: 16px;
   font-size: 16px;
-  border: 2px solid black;
+  border: 2px solid #444; /* Dark border */
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -70,7 +70,7 @@ body {
 }
 
 .button:hover {
-  background-color: #633e66;
+  background-color: #505050; /* Slightly lighter on hover */
   transform: translateY(-2px);
 }
 
@@ -83,7 +83,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #513f58;
+  background-color: #3a3a3a; /* Dark dropdown background */
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -102,7 +102,7 @@ body {
 }
 
 .dropdown-content .button:hover {
-  background-color: #715a7a;
+  background-color: #505050; /* Slightly lighter on hover */
   transform: none;
 }
 
@@ -110,19 +110,19 @@ body {
 .hello-world {
   margin: 20px;
   padding: 20px;
-  border: 2px solid #333;
-  color: #e9e4d3;
+  border: 2px solid #444; /* Dark border */
+  color: #f5f5f5;
   font-size: 29px;
   border-radius: 8px;
-  background-color: #684a7a;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #333; /* Darker background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Image Button Styling */
 .image-button {
   width: 50%;
   height: 50%;
-  border: 2px solid black;
+  border: 2px solid #444; /* Dark border */
   border-radius: 8px;
   transition: transform 0.2s;
 }
