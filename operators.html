@@ -3,50 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minarets Scriptwise</title>
+    <title>Python Code Runner</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="banner">
-        <!-- Hamburger button -->
-        <div class="hamburger" onclick="goToHomePage()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <!-- End of Hamburger button -->
-        <div class="button-container">
-            <div class="dropdown">
-                <button class="button" id="lessonsBtn">Lessons</button>
-                <div class="dropdown-content" id="lessonDropdown">
-                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
-                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
-                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
-                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
-                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
-                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
-                    <button class="button" onclick="window.location.href='files.html'">Files</button>
-                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
-                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
-                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
-                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
-                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
-                </div>
-            </div>
-            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
-        </div>
-    </div>
-    <div class="hello-world">
-        <textarea class="code-box" id="codeInput" placeholder="Write your Python code here..."></textarea>
-        <button class="run-button" onclick="runCode()">Run Code</button>
-        <pre class="output-box" id="outputBox"></pre>
+    <div class="container">
+        <textarea id="codeInput" placeholder="Write your Python code here..."></textarea>
+        <button onclick="runCode()">Run Code</button>
+        <div id="outputBox"></div>
     </div>
 
     <script>
-        function goToHomePage() {
-            window.location.href = 'index.html';
-        }
-
         function runCode() {
             const code = document.getElementById('codeInput').value;
             fetch('/run', {
