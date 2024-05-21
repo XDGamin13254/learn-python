@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Code Runner</title>
+    <title>Minarets Scriptwise</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <textarea id="codeInput" placeholder="Write your Python code here..."></textarea>
-        <button onclick="runCode()">Run Code</button>
-        <div id="outputBox"></div>
+    <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button" id="lessonsBtn">Lessons</button>
+                <div class="dropdown-content" id="lessonDropdown">
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
+                </div>
+            </div>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+        </div>
+    </div>
+    <div class="hello-world">
+        Hello,<br>
+        Welcome to Minarets Scriptwise, this website was born because we the 2024 high school seniors Caden Halencak and Connor Elm thought that the current way programming was being taught at Minarets was at times overly complex and could use some clarification.. As amateur enthusiasts in the land of coding we started this journey to share our basic knowledge and make coding education a little less intimidating for our peers.<br><br>
+        Here's what you'll find on our platform: <br><br>
+        A Learning Aid: Our collection of resources aims to guide you through the basics of coding making the process of finding and solving complex issues slightly easier in the future. While we may have made a boring and bland first website we promise a genuine attempt to simplify complex concepts and support your interest in coding.<br><br>
+        A Project Experience: For this SLE we aimed rather high and while our goals haven't been completely met we exceeded our expectations in our ability.<br><br>
+        We thank you for looking into the world of coding and taking interest in the tech landscape! While we may not have the best website we hand typed it and our hands hurt.<br><br>
+        Happy coding,<br>
+        Caden Halencak, Connor Elm
     </div>
 
     <script>
-        function runCode() {
-            const code = document.getElementById('codeInput').value;
-            fetch('/run', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ code: code }),
-            })
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('outputBox').textContent = data.output;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                document.getElementById('outputBox').textContent = 'Error running code';
-            });
+        function goToHomePage() {
+            window.location.href = 'index.html';
         }
     </script>
 </body>
