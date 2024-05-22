@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minarets Scriptwise</title>
+    <title>Python Additions - Minarets Scriptwise</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,15 +36,65 @@
             <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
         </div>
     </div>
+
     <div class="hello-world">
-        Arithmatic operators in python are very simple, although there are some key things to know before you try them out.
-        The first thing to know is the difference between one equals sign and two, (IE; = or ==) as the double equals sign checks if the numbers on both sides are equal
-        (IE; 1 == 1 is true, while 1 == 2 is false.) while one equal sign is setting a variable equal to something, which is a topic that will be visited later.<br>
-        The first operator other than the equal sign is the addition sign, it's the same as real life. (IE; 1 + 4 == 5) subtraction works the same (IE; 4 - 1 == 3)
-        Mulitplication works the same, but uses the star sign instead of an x (3 * 6 == 18). Division uses the slash symbol (8/2 == 4).<br>
-        This is the end of operators looking or acting the same as in real life, the first notable difference is exponents using to star signs instead of a carrot (2**2 == 4)
-        Modulo uses the percent sign, and finds the remainder when dividing the first number by the second (5%3 == 2).<br>
+        <h1>Python Additions</h1>
+        <p>Addition is one of the fundamental arithmetic operations, and it is straightforward in Python. Here's a quick guide on performing addition in Python:</p>
+        
+        <h2>Basic Addition</h2>
+        <p>You can add numbers using the <code>+</code> operator. Here's an example:</p>
+        <pre><code>a = 5
+b = 3
+result = a + b
+print(f"The result of {a} + {b} is {result}")</code></pre>
+        <p>This code will output: <code>The result of 5 + 3 is 8</code>.</p>
+
+        <h2>Adding Multiple Numbers</h2>
+        <p>You can add more than two numbers in a single expression:</p>
+        <pre><code>result = 1 + 2 + 3 + 4
+print(f"The result of adding 1, 2, 3, and 4 is {result}")</code></pre>
+        <p>This will output: <code>The result of adding 1, 2, 3, and 4 is 10</code>.</p>
+
+        <h2>Using Variables</h2>
+        <p>You can also use variables to store numbers and add them:</p>
+        <pre><code>num1 = 7
+num2 = 10
+total = num1 + num2
+print(f"The total of {num1} and {num2} is {total}")</code></pre>
+        <p>This will output: <code>The total of 7 and 10 is 17</code>.</p>
+
+        <h2>Adding Floating-Point Numbers</h2>
+        <p>Addition works the same way with floating-point numbers:</p>
+        <pre><code>a = 1.5
+b = 2.3
+result = a + b
+print(f"The result of {a} + {b} is {result}")</code></pre>
+        <p>This will output: <code>The result of 1.5 + 2.3 is 3.8</code>.</p>
+
+        <h2>Adding Numbers in a List</h2>
+        <p>You can sum all the elements in a list using the <code>sum()</code> function:</p>
+        <pre><code>numbers = [1, 2, 3, 4, 5]
+total = sum(numbers)
+print(f"The sum of the list is {total}")</code></pre>
+        <p>This will output: <code>The sum of the list is 15</code>.</p>
+
+        <h2>Handling User Input</h2>
+        <p>You can also add numbers provided by the user. Here's an example that adds two numbers input by the user:</p>
+        <pre><code>num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+total = num1 + num2
+print(f"The total of {num1} and {num2} is {total}")</code></pre>
+        <p>This code will prompt the user to enter two numbers and then output their sum.</p>
     </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Minarets Scriptwise. All rights reserved.</p>
+        <a href="contacts.html">Contact Us</a> |
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+    </div>
+
     <script>
         function goToHomePage() {
             window.location.href = 'index.html';
