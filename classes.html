@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Classes - Minarets Scriptwise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button" id="lessonsBtn">Lessons</button>
+                <div class="dropdown-content" id="lessonDropdown">
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
+                </div>
+            </div>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+        </div>
+    </div>
+
+    <div class="hello-world">
+        <h1>Working with Classes in Python</h1>
+        <p>Classes are a fundamental aspect of object-oriented programming (OOP) in Python. They allow you to create custom data types and define the behavior of the objects created from these classes.</p>
+        
+        <h2>Defining a Class</h2>
+        <p>A class is defined using the <code>class</code> keyword, followed by the class name and a colon. The body of the class contains attributes and methods that define the class's behavior.</p>
+        <pre><code>class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        return f"{self.name} is barking."
+
+# Create an instance of the Dog class
+dog1 = Dog("Buddy", 3)
+print(dog1.bark())
+        </code></pre>
+        
+        <h2>Instance Attributes and Methods</h2>
+        <p>Attributes are variables that belong to the class. They are defined using the <code>self</code> keyword. Methods are functions that belong to the class and can operate on the instance attributes.</p>
+        <pre><code>class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def description(self):
+        return f"{self.year} {self.make} {self.model}"
+
+# Create an instance of the Car class
+car1 = Car("Toyota", "Corolla", 2020)
+print(car1.description())
+        </code></pre>
+        
+        <h2>Class Attributes</h2>
+        <p>Class attributes are shared by all instances of the class. They are defined outside of any instance methods and can be accessed using the class name or an instance.</p>
+        <pre><code>class Circle:
+    pi = 3.14159  # Class attribute
+
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return Circle.pi * self.radius ** 2
+
+# Create an instance of the Circle class
+circle1 = Circle(5)
+print(circle1.area())
+        </code></pre>
+        
+        <h2>Inheritance</h2>
+        <p>Inheritance allows you to define a new class based on an existing class. The new class (child) inherits attributes and methods from the existing class (parent).</p>
+        <pre><code>class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        pass
+
+class Cat(Animal):
+    def speak(self):
+        return f"{self.name} says Meow!"
+
+class Dog(Animal):
+    def speak(self):
+        return f"{self.name} says Woof!"
+
+# Create instances of the Cat and Dog classes
+cat1 = Cat("Whiskers")
+dog1 = Dog("Rex")
+
+print(cat1.speak())
+print(dog1.speak())
+        </code></pre>
+        
+        <h2>Encapsulation</h2>
+        <p>Encapsulation is the concept of restricting access to certain attributes and methods. This is done by prefixing the attribute or method name with an underscore (_).</p>
+        <pre><code>class Person:
+    def __init__(self, name, age):
+        self._name = name  # Protected attribute
+        self._age = age    # Protected attribute
+
+    def get_age(self):
+        return self._age
+
+    def set_age(self, age):
+        if age > 0:
+            self._age = age
+        else:
+            print("Invalid age")
+
+# Create an instance of the Person class
+person1 = Person("Alice", 30)
+print(person1.get_age())
+person1.set_age(31)
+print(person1.get_age())
+        </code></pre>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Minarets Scriptwise. All rights reserved.</p>
+        <a href="contacts.html">Contact Us</a> |
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
