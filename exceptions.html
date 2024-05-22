@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exceptions - Minarets Scriptwise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button" id="lessonsBtn">Lessons</button>
+                <div class="dropdown-content" id="lessonDropdown">
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
+                </div>
+            </div>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+        </div>
+    </div>
+
+    <div class="hello-world">
+        <h1>Understanding Python Exceptions</h1>
+        <p>In Python, exceptions are events that occur during program execution that disrupt the normal flow of the program's instructions.</p>
+
+        <h2>Types of Exceptions</h2>
+        <p>There are many built-in exceptions in Python, such as:</p>
+        <ul>
+            <li><strong>ZeroDivisionError:</strong> Raised when division or modulo by zero occurs.</li>
+            <li><strong>TypeError:</strong> Raised when an operation or function is applied to an object of an inappropriate type.</li>
+            <li><strong>ValueError:</strong> Raised when a function receives an argument of the correct type but with an inappropriate value.</li>
+            <li><strong>IndexError:</strong> Raised when a sequence subscript is out of range.</li>
+            <li><strong>FileNotFoundError:</strong> Raised when a file or directory is requested but cannot be found.</li>
+            <li><strong>KeyError:</strong> Raised when a dictionary key is not found.</li>
+            <li><strong>IOError:</strong> Raised when an input/output operation fails.</li>
+            <li><strong>and many more...</strong></li>
+        </ul>
+
+        <h2>Handling Exceptions</h2>
+        <p>To handle exceptions in Python, you can use the <code>try</code>, <code>except</code>, and optionally <code>finally</code> blocks. This allows you to gracefully handle errors and prevent program crashes.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Minarets Scriptwise. All rights reserved.</p>
+        <a href="contacts.html">Contact Us</a> |
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
