@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Additions - Minarets Scriptwise</title>
+    <title>Python Operators - Minarets Scriptwise</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,53 +38,63 @@
     </div>
 
     <div class="hello-world">
-        <h1>Python Additions</h1>
-        <p>Addition is one of the fundamental arithmetic operations, and it is straightforward in Python. Here's a quick guide on performing addition in Python:</p>
+        <h1>Python Operators</h1>
+        <p>Operators are special symbols in Python that carry out arithmetic or logical computation. The value that the operator operates on is called the operand. Here's a comprehensive guide to Python operators:</p>
         
-        <h2>Basic Addition</h2>
-        <p>You can add numbers using the <code>+</code> operator. Here's an example:</p>
-        <pre><code>a = 5
-b = 3
-result = a + b
-print(f"The result of {a} + {b} is {result}")</code></pre>
-        <p>This code will output: <code>The result of 5 + 3 is 8</code>.</p>
+        <h2>Arithmetic Operators</h2>
+        <p>These operators are used to perform mathematical operations like addition, subtraction, multiplication, and division.</p>
+        <ul>
+            <li><code>+</code> : Addition - Adds two operands.</li>
+            <li><code>-</code> : Subtraction - Subtracts the second operand from the first.</li>
+            <li><code>*</code> : Multiplication - Multiplies two operands.</li>
+            <li><code>/</code> : Division - Divides the first operand by the second.</li>
+            <li><code>%</code> : Modulus - Returns the remainder when the first operand is divided by the second.</li>
+            <li><code>**</code> : Exponentiation - Returns the first operand raised to the power of the second.</li>
+            <li><code>//</code> : Floor Division - Returns the quotient after division, discarding the fractional part.</li>
+        </ul>
 
-        <h2>Adding Multiple Numbers</h2>
-        <p>You can add more than two numbers in a single expression:</p>
-        <pre><code>result = 1 + 2 + 3 + 4
-print(f"The result of adding 1, 2, 3, and 4 is {result}")</code></pre>
-        <p>This will output: <code>The result of adding 1, 2, 3, and 4 is 10</code>.</p>
+        <h2>Comparison Operators</h2>
+        <p>These operators compare the values on either side of them and determine the relation between them.</p>
+        <ul>
+            <li><code>==</code> : Equal to - True if both operands are equal.</li>
+            <li><code>!=</code> : Not equal to - True if operands are not equal.</li>
+            <li><code>></code> : Greater than - True if the left operand is greater than the right.</li>
+            <li><code><</code> : Less than - True if the left operand is less than the right.</li>
+            <li><code>>=</code> : Greater than or equal to - True if the left operand is greater than or equal to the right.</li>
+            <li><code><=</code> : Less than or equal to - True if the left operand is less than or equal to the right.</li>
+        </ul>
 
-        <h2>Using Variables</h2>
-        <p>You can also use variables to store numbers and add them:</p>
-        <pre><code>num1 = 7
-num2 = 10
-total = num1 + num2
-print(f"The total of {num1} and {num2} is {total}")</code></pre>
-        <p>This will output: <code>The total of 7 and 10 is 17</code>.</p>
+        <h2>Logical Operators</h2>
+        <p>These operators are used to perform logical operations, combining multiple conditions.</p>
+        <ul>
+            <li><code>and</code> : Logical AND - True if both operands are true.</li>
+            <li><code>or</code> : Logical OR - True if either of the operands is true.</li>
+            <li><code>not</code> : Logical NOT - True if the operand is false.</li>
+        </ul>
 
-        <h2>Adding Floating-Point Numbers</h2>
-        <p>Addition works the same way with floating-point numbers:</p>
-        <pre><code>a = 1.5
-b = 2.3
-result = a + b
-print(f"The result of {a} + {b} is {result}")</code></pre>
-        <p>This will output: <code>The result of 1.5 + 2.3 is 3.8</code>.</p>
+        <h2>Assignment Operators</h2>
+        <p>These operators are used to assign values to variables.</p>
+        <ul>
+            <li><code>=</code> : Assign - Assigns the right operand to the left operand.</li>
+            <li><code>+=</code> : Add and assign - Adds the right operand to the left operand and assigns the result to the left operand.</li>
+            <li><code>-=</code> : Subtract and assign - Subtracts the right operand from the left operand and assigns the result to the left operand.</li>
+            <li><code>*=</code> : Multiply and assign - Multiplies the right operand with the left operand and assigns the result to the left operand.</li>
+            <li><code>/=</code> : Divide and assign - Divides the left operand by the right operand and assigns the result to the left operand.</li>
+            <li><code>%=</code> : Modulus and assign - Takes the modulus using two operands and assigns the result to the left operand.</li>
+            <li><code>**=</code> : Exponent and assign - Performs exponential (power) calculation on operands and assigns the result to the left operand.</li>
+            <li><code>//=</code> : Floor division and assign - Performs floor division on operands and assigns the result to the left operand.</li>
+        </ul>
 
-        <h2>Adding Numbers in a List</h2>
-        <p>You can sum all the elements in a list using the <code>sum()</code> function:</p>
-        <pre><code>numbers = [1, 2, 3, 4, 5]
-total = sum(numbers)
-print(f"The sum of the list is {total}")</code></pre>
-        <p>This will output: <code>The sum of the list is 15</code>.</p>
-
-        <h2>Handling User Input</h2>
-        <p>You can also add numbers provided by the user. Here's an example that adds two numbers input by the user:</p>
-        <pre><code>num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-total = num1 + num2
-print(f"The total of {num1} and {num2} is {total}")</code></pre>
-        <p>This code will prompt the user to enter two numbers and then output their sum.</p>
+        <h2>Bitwise Operators</h2>
+        <p>These operators are used to perform bit-level operations.</p>
+        <ul>
+            <li><code>&</code> : Bitwise AND - Performs bitwise AND on two operands.</li>
+            <li><code>|</code> : Bitwise OR - Performs bitwise OR on two operands.</li>
+            <li><code>^</code> : Bitwise XOR - Performs bitwise XOR on two operands.</li>
+            <li><code>~</code> : Bitwise NOT - Inverts all the bits.</li>
+            <li><code><<</code> : Bitwise left shift - Shifts the bits of the left operand left by the number of positions specified by the right operand.</li>
+            <li><code>>></code> : Bitwise right shift - Shifts the bits of the left operand right by the number of positions specified by the right operand.</li>
+        </ul>
     </div>
 
     <!-- Footer -->
