@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flow - Minarets Scriptwise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button" id="lessonsBtn">Lessons</button>
+                <div class="dropdown-content" id="lessonDropdown">
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
+                </div>
+            </div>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+        </div>
+    </div>
+
+    <div class="hello-world">
+        <h1>Understanding Control Flow in Python</h1>
+        <p>Control flow is the order in which individual statements, instructions, or function calls are executed or evaluated in a programming language. In Python, control flow tools include conditionals, loops, and exceptions.</p>
+
+        <h2>If Statements</h2>
+        <p>If statements are used for conditional execution. They allow you to execute certain blocks of code only if a condition is true.</p>
+        <pre><code>age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")</code></pre>
+
+        <h2>For Loops</h2>
+        <p>For loops are used to iterate over a sequence (like a list, tuple, dictionary, set, or string) and execute a block of code for each item in the sequence.</p>
+        <pre><code>fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)</code></pre>
+
+        <h2>While Loops</h2>
+        <p>While loops repeatedly execute a block of code as long as a condition is true.</p>
+        <pre><code>count = 0
+while count < 5:
+    print(count)
+    count += 1</code></pre>
+
+        <h2>Break and Continue</h2>
+        <p>The <code>break</code> statement terminates the loop completely, while the <code>continue</code> statement skips the rest of the code inside the loop for the current iteration and continues with the next iteration.</p>
+        <pre><code># Using break
+for number in range(10):
+    if number == 5:
+        break
+    print(number)
+
+# Using continue
+for number in range(10):
+    if number == 5:
+        continue
+    print(number)</code></pre>
+
+        <h2>Nested Loops</h2>
+        <p>Nested loops are loops inside another loop. The inner loop is executed one time for each iteration of the outer loop.</p>
+        <pre><code>for i in range(3):
+    for j in range(3):
+        print(f"i: {i}, j: {j}")</code></pre>
+
+        <h2>Exception Handling</h2>
+        <p>Exceptions are used to handle errors gracefully. The <code>try</code> block lets you test a block of code for errors, and the <code>except</code> block lets you handle the error.</p>
+        <pre><code>try:
+    x = 1 / 0
+except ZeroDivisionError:
+    print("You can't divide by zero!")</code></pre>
+
+        <h2>Functions as Control Flow</h2>
+        <p>Functions can also control the flow of your program. They allow you to define blocks of code that can be executed whenever you need them, enhancing code reusability and readability.</p>
+        <pre><code>def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))
+print(greet("Bob"))</code></pre>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Minarets Scriptwise. All rights reserved.</p>
+        <a href="contacts.html">Contact Us</a> |
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
