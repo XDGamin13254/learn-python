@@ -1,7 +1,7 @@
 /* General Styling */
 body {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #513f58;
+    color: #e9e4d3;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,8 +9,8 @@ body {
 
 /* Banner Styling */
 .banner {
-    background-color: #4a90e2;
-    color: #fff;
+    background-color: #cfb7a1;
+    color: #513f58;
     padding: 15px 20px;
     text-align: center;
     position: relative;
@@ -37,8 +37,8 @@ body {
 .hamburger .line {
     width: 100%;
     height: 2px;
-    background-color: #fff;
-    border: 1px solid #fff;
+    background-color: #e0d097;
+    border: 1px solid #513f58;
 }
 
 /* Button Container */
@@ -51,11 +51,11 @@ body {
 
 /* Button Styling */
 .button {
-    background-color: #7b8a8b;
-    color: #fff;
+    background-color: #513f58;
+    color: #e9e4d3;
     padding: 16px;
     font-size: 16px;
-    border: 2px solid #333;
+    border: 2px solid #e9e4d3;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
@@ -68,7 +68,7 @@ body {
 }
 
 .button:hover {
-    background-color: #95a5a6;
+    background-color: #6c527a;
     transform: translateY(-2px);
 }
 
@@ -81,7 +81,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #7b8a8b;
+    background-color: #513f58;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -95,12 +95,12 @@ body {
     width: 100%;
     padding: 12px;
     border-radius: 0;
-    border: none;
+    border: 2px solid #e9e4d3;
     text-align: left;
 }
 
 .dropdown-content .button:hover {
-    background-color: #95a5a6;
+    background-color: #6c527a;
     transform: none;
 }
 
@@ -108,19 +108,19 @@ body {
 .hello-world {
     margin: 20px;
     padding: 20px;
-    border: 2px solid #444;
-    color: #333;
+    border: 2px solid #e9e4d3;
+    color: #e9e4d3;
     font-size: 29px;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #695478;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     line-height: 1.6;
 }
 
 /* Footer Styling */
 .footer {
-    background-color: #4a90e2;
-    color: #fff;
+    background-color: #cfb7a1;
+    color: #513f58;
     text-align: center;
     padding: 15px;
     border-radius: 8px;
@@ -128,7 +128,7 @@ body {
 }
 
 .footer a {
-    color: #fff;
+    color: #513f58;
     text-decoration: none;
     margin: 0 10px;
 }
