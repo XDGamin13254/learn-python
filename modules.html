@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules - Minarets Scriptwise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button" id="lessonsBtn">Lessons</button>
+                <div class="dropdown-content" id="lessonDropdown">
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
+                </div>
+            </div>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+        </div>
+    </div>
+
+    <div class="hello-world">
+        <h1>Exploring Python Modules</h1>
+        <p>Modules in Python are files containing Python code. They can define functions, classes, and variables, and can be reused in other Python programs.</p>
+
+        <h2>Importing Modules</h2>
+        <p>To use modules in Python, you need to import them into your code using the <code>import</code> statement. There are different ways to import modules:</p>
+        <pre><code>import module_name
+from module_name import function_name
+import module_name as alias</code></pre>
+
+        <h2>Popular Python Modules</h2>
+        <p>Python has a vast ecosystem of modules covering various domains. Some popular modules include:</p>
+        <ul>
+            <li><strong>math:</strong> Provides mathematical functions and constants.</li>
+            <li><strong>random:</strong> Generates random numbers and provides random-related functions.</li>
+            <li><strong>datetime:</strong> Manipulates dates and times.</li>
+            <li><strong>os:</strong> Interacts with the operating system.</li>
+            <li><strong>requests:</strong> Makes HTTP requests.</li>
+            <li><strong>numpy:</strong> Numerical computing library.</li>
+            <li><strong>pandas:</strong> Data manipulation and analysis library.</li>
+            <li><strong>matplotlib:</strong> Plotting library for creating visualizations.</li>
+        </ul>
+
+        <h2>Creating Your Own Modules</h2>
+        <p>You can also create your own modules in Python by defining functions, classes, or variables in a Python file and then importing them into other Python scripts.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Minarets Scriptwise. All rights reserved.</p>
+        <a href="contacts.html">Contact Us</a> |
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
