@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citations - Minarets Scriptwise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button" id="lessonsBtn">Lessons</button>
+                <div class="dropdown-content" id="lessonDropdown">
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
+                </div>
+            </div>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+        </div>
+    </div>
+
+    <div class="hello-world">
+        <h1>Citations</h1>
+        <p>Below are the sources used for the information provided in the lessons:</p>
+        <ul>
+            <li><strong>Lesson Title:</strong> Source URL</li>
+            <!-- Add citations for each lesson here -->
+            <li><strong>Getting Started:</strong> <a href="https://example.com/getting_started">Source URL</a></li>
+            <li><strong>Operators:</strong> <a href="https://example.com/operators">Source URL</a></li>
+            <li><strong>Standard Libraries:</strong> <a href="https://example.com/standard_libraries">Source URL</a></li>
+            <!-- Add more citations as needed -->
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Minarets Scriptwise. All rights reserved.</p>
+        <a href="contacts.html">Contact Us</a> |
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
