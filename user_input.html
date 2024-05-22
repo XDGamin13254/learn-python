@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input - Minarets Scriptwise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button" id="lessonsBtn">Lessons</button>
+                <div class="dropdown-content" id="lessonDropdown">
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
+                </div>
+            </div>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+        </div>
+    </div>
+
+    <div class="hello-world">
+        <h1>Python User Input</h1>
+        <p>Handling user input is a crucial part of many programs. Python provides simple and effective ways to capture user input and use it in your code. Here's how you can work with user input in Python:</p>
+        <h2>Using the input() Function</h2>
+        <p>The <code>input()</code> function allows you to capture user input as a string:</p>
+        <pre><code>name = input("Enter your name: ")
+print(f"Hello, {name}!")</code></pre>
+        <p>This code prompts the user to enter their name and then greets them.</p>
+        <h2>Converting Input</h2>
+        <p>Since the <code>input()</code> function returns a string, you might need to convert the input to other types:</p>
+        <pre><code>age = input("Enter your age: ")
+age = int(age)
+print(f"You are {age} years old.")</code></pre>
+        <p>This code captures the user's age and converts it to an integer before using it.</p>
+        <h2>Handling Invalid Input</h2>
+        <p>It's important to handle cases where the user provides invalid input. You can use a try-except block to manage this:</p>
+        <pre><code>try:
+    age = int(input("Enter your age: "))
+    print(f"You are {age} years old.")
+except ValueError:
+    print("Please enter a valid number.")</code></pre>
+        <h2>Using input() in Loops</h2>
+        <p>You can use the <code>input()</code> function within loops to repeatedly prompt the user for input until you get a valid response:</p>
+        <pre><code>while True:
+    age = input("Enter your age: ")
+    try:
+        age = int(age)
+        break
+    except ValueError:
+        print("Please enter a valid number.")
+print(f"You are {age} years old.")</code></pre>
+        <p>This code will keep asking for the user's age until a valid number is provided.</p>
+        <h2>Advanced Input Handling</h2>
+        <p>For more advanced input handling, consider using regular expressions or third-party libraries to validate and parse user input.</p>
+        <pre><code>import re
+
+email = input("Enter your email: ")
+if re.match(r"[^@]+@[^@]+\.[^@]+", email):
+    print("Valid email address.")
+else:
+    print("Invalid email address.")</code></pre>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Minarets Scriptwise. All rights reserved.</p>
+        <a href="contacts.html">Contact Us</a> |
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
