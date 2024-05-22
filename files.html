@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Files - Minarets Scriptwise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button" id="lessonsBtn">Lessons</button>
+                <div class="dropdown-content" id="lessonDropdown">
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
+                </div>
+            </div>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+        </div>
+    </div>
+
+    <div class="hello-world">
+        <h1>Working with Files in Python</h1>
+        <p>In Python, working with files is a common task for many applications. Python provides several built-in functions and methods to handle files. Here's a comprehensive guide to working with files in Python:</p>
+        
+        <h2>Opening and Closing Files</h2>
+        <p>Files can be opened using the <code>open()</code> function, which returns a file object. Files must be closed using the <code>close()</code> method to free up system resources.</p>
+        <pre><code># Open a file
+file = open('example.txt', 'r')  # 'r' means read mode
+
+# Perform file operations
+
+# Close the file
+file.close()
+        </code></pre>
+        
+        <h2>Reading from Files</h2>
+        <p>There are several methods to read from a file, such as <code>read()</code>, <code>readline()</code>, and <code>readlines()</code>.</p>
+        <pre><code># Read the entire file
+file = open('example.txt', 'r')
+content = file.read()
+print(content)
+file.close()
+
+# Read file line by line
+file = open('example.txt', 'r')
+for line in file:
+    print(line, end='')
+file.close()
+        </code></pre>
+        
+        <h2>Writing to Files</h2>
+        <p>Files can be written to using the <code>write()</code> or <code>writelines()</code> methods. Use the 'w' mode to write to a file, which will overwrite the file if it exists.</p>
+        <pre><code># Write to a file
+file = open('example.txt', 'w')
+file.write('Hello, world!')
+file.close()
+        </code></pre>
+        
+        <h2>Appending to Files</h2>
+        <p>To append content to an existing file, open the file in 'a' mode.</p>
+        <pre><code># Append to a file
+file = open('example.txt', 'a')
+file.write('\nAppended text.')
+file.close()
+        </code></pre>
+        
+        <h2>Using the <code>with</code> Statement</h2>
+        <p>The <code>with</code> statement is used for resource management and ensures that files are properly closed after their suite finishes, even if an exception is raised.</p>
+        <pre><code># Using the with statement
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+        </code></pre>
+        
+        <h2>File Modes</h2>
+        <p>When opening a file, you can specify the mode in which the file is opened. Common modes include:</p>
+        <ul>
+            <li><code>'r'</code>: Read (default mode).</li>
+            <li><code>'w'</code>: Write (creates a new file or truncates an existing file).</li>
+            <li><code>'a'</code>: Append (writes data to the end of the file).</li>
+            <li><code>'b'</code>: Binary mode (e.g., <code>'rb'</code> or <code>'wb'</code> for reading or writing binary files).</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Minarets Scriptwise. All rights reserved.</p>
+        <a href="contacts.html">Contact Us</a> |
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
