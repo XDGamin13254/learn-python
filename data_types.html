@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types - Minarets Scriptwise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button" id="lessonsBtn">Lessons</button>
+                <div class="dropdown-content" id="lessonDropdown">
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
+                </div>
+            </div>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+        </div>
+    </div>
+
+    <div class="hello-world">
+        <h1>Understanding Data Types in Python</h1>
+        <p>Data types are a fundamental aspect of any programming language, and Python is no exception. Python supports various data types, each serving a specific purpose. Understanding these data types is essential for writing efficient and effective code.</p>
+
+        <h2>Numeric Types</h2>
+        <p>Python supports different types of numbers, including integers, floating-point numbers, and complex numbers.</p>
+        <ul>
+            <li><strong>int:</strong> Whole numbers, e.g., <code>5, -3, 42</code></li>
+            <li><strong>float:</strong> Numbers with decimal points, e.g., <code>3.14, -0.001, 2.0</code></li>
+            <li><strong>complex:</strong> Complex numbers with real and imaginary parts, e.g., <code>1+2j, 3-4j</code></li>
+        </ul>
+
+        <h2>Sequence Types</h2>
+        <p>Sequences are collections of items, and Python supports several types of sequences:</p>
+        <ul>
+            <li><strong>list:</strong> Ordered, mutable collections of items, e.g., <code>[1, 2, 3]</code></li>
+            <li><strong>tuple:</strong> Ordered, immutable collections of items, e.g., <code>(1, 2, 3)</code></li>
+            <li><strong>range:</strong> Represents a sequence of numbers, e.g., <code>range(5)</code> (0 to 4)</li>
+        </ul>
+
+        <h2>String Type</h2>
+        <p>Strings are sequences of characters used to represent text. In Python, strings are immutable.</p>
+        <pre><code>text = "Hello, World!"
+print(text)
+print(text[0])
+print(text[0:5])</code></pre>
+
+        <h2>Set Types</h2>
+        <p>Sets are unordered collections of unique items. Python supports two types of sets:</p>
+        <ul>
+            <li><strong>set:</strong> Mutable sets, e.g., <code>{1, 2, 3}</code></li>
+            <li><strong>frozenset:</strong> Immutable sets, e.g., <code>frozenset([1, 2, 3])</code></li>
+        </ul>
+
+        <h2>Mapping Types</h2>
+        <p>Mappings are collections of key-value pairs. The primary mapping type in Python is the dictionary.</p>
+        <pre><code>student = {"name": "Alice", "age": 20, "grade": "A"}
+print(student["name"])
+print(student.get("age"))</code></pre>
+
+        <h2>Boolean Type</h2>
+        <p>The boolean type represents truth values, and it can be either <code>True</code> or <code>False</code>.</p>
+        <pre><code>is_student = True
+is_graduated = False</code></pre>
+
+        <h2>None Type</h2>
+        <p>The <code>None</code> type is used to signify the absence of a value or a null value.</p>
+        <pre><code>result = None</code></pre>
+
+        <h2>Type Conversion</h2>
+        <p>Python supports explicit type conversion (also known as type casting). Here are some common conversions:</p>
+        <pre><code>num = 10
+str_num = str(num)  # Convert int to string
+float_num = float(num)  # Convert int to float
+int_num = int("20")  # Convert string to int</code></pre>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Minarets Scriptwise. All rights reserved.</p>
+        <a href="contacts.html">Contact Us</a> |
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
