@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Functions - Minarets Scriptwise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="goToHomePage()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End of Hamburger button -->
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button" id="lessonsBtn">Lessons</button>
+                <div class="dropdown-content" id="lessonDropdown">
+                    <button class="button" onclick="window.location.href='getting_started.html'">Getting Started</button>
+                    <button class="button" onclick="window.location.href='operators.html'">Operators</button>
+                    <button class="button" onclick="window.location.href='standard_libraries.html'">Standard Libraries</button>
+                    <button class="button" onclick="window.location.href='functions.html'">Functions</button>
+                    <button class="button" onclick="window.location.href='user_input.html'">User Input</button>
+                    <button class="button" onclick="window.location.href='additions.html'">Additions</button>
+                    <button class="button" onclick="window.location.href='files.html'">Files</button>
+                    <button class="button" onclick="window.location.href='classes.html'">Classes</button>
+                    <button class="button" onclick="window.location.href='control_flow.html'">Control Flow</button>
+                    <button class="button" onclick="window.location.href='data_types.html'">Data Types</button>
+                    <button class="button" onclick="window.location.href='modules.html'">Modules</button>
+                    <button class="button" onclick="window.location.href='exceptions.html'">Exceptions</button>
+                </div>
+            </div>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+        </div>
+    </div>
+
+    <div class="hello-world">
+        <h1>Python Functions</h1>
+        <p>Functions are a fundamental building block in Python programming. They allow you to encapsulate code into reusable blocks, making your programs more modular and easier to manage. Here's a quick overview of how to work with functions in Python:</p>
+        <h2>Defining a Function</h2>
+        <pre><code>def my_function():
+    print("Hello from a function")</code></pre>
+        <p>This defines a function named <code>my_function</code> that prints a message.</p>
+        <h2>Calling a Function</h2>
+        <pre><code>my_function()</code></pre>
+        <p>This calls <code>my_function</code> and executes its code.</p>
+        <h2>Function Parameters</h2>
+        <p>Functions can take parameters, allowing you to pass values to them:</p>
+        <pre><code>def greet(name):
+    print(f"Hello, {name}!")</code></pre>
+        <pre><code>greet("Alice")  # Outputs: Hello, Alice!</code></pre>
+        <h2>Return Values</h2>
+        <p>Functions can also return values using the <code>return</code> statement:</p>
+        <pre><code>def add(a, b):
+    return a + b</code></pre>
+        <pre><code>result = add(3, 5)
+print(result)  # Outputs: 8</code></pre>
+        <h2>Default Parameters</h2>
+        <p>You can define default values for parameters, making them optional:</p>
+        <pre><code>def greet(name="Guest"):
+    print(f"Hello, {name}!")</code></pre>
+        <pre><code>greet()       # Outputs: Hello, Guest!
+greet("Bob")  # Outputs: Hello, Bob!</code></pre>
+        <h2>Keyword Arguments</h2>
+        <p>Python allows you to use keyword arguments to make function calls more readable:</p>
+        <pre><code>def describe_pet(animal_type, pet_name):
+    print(f"I have a {animal_type} named {pet_name}.")</code></pre>
+        <pre><code>describe_pet(animal_type="hamster", pet_name="Harry")</code></pre>
+        <h2>Arbitrary Arguments</h2>
+        <p>You can use <code>*args</code> and <code>**kwargs</code> to accept an arbitrary number of positional and keyword arguments:</p>
+        <pre><code>def make_pizza(*toppings):
+    print(f"Making a pizza with {toppings}")</code></pre>
+        <pre><code>make_pizza("pepperoni", "cheese", "olives")</code></pre>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Minarets Scriptwise. All rights reserved.</p>
+        <a href="contacts.html">Contact Us</a> |
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> |
+        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
